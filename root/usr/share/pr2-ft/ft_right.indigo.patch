@@ -1,0 +1,39 @@
+--- robot_uncalibrated_1.8.2.xml	2012-11-06 18:24:38.959129108 -0800
++++ robot_uncalibrated_1.8.2_ft_right.xml	2012-11-06 18:32:23.518427723 -0800
+@@ -2022,13 +2022,33 @@
+   <transmission name="r_wrist_trans" type="pr2_mechanism_model/WristTransmission">
+     <rightActuator mechanicalReduction="60.1714285714" name="r_wrist_r_motor"/>
+     <leftActuator mechanicalReduction="60.1714285714" name="r_wrist_l_motor"/>
+     <flexJoint mechanicalReduction="-1.0" name="r_wrist_flex_joint"/>
+-    <rollJoint mechanicalReduction="1.0" name="r_wrist_roll_joint"/>
++    <rollJoint mechanicalReduction="1.0" name="r_wrist_roll_joint" offset="1.4835298641951802"/>
+   </transmission>
++  <joint name="r_force_torque_adapter_joint" type="fixed">
++     <parent link="r_wrist_roll_link"/>
++    <child link="r_force_torque_adapter_link"/>
++    <origin rpy="0 -1.5707963267948966 0" xyz="0.0356 0 0"/>
++  </joint>
++  <link name="r_force_torque_adapter_link"/>
++  <joint name="r_force_torque_joint" type="fixed">
++    <parent link="r_force_torque_adapter_link"/>
++    <child link="r_force_torque_link"/>
++    <origin rpy="0 0 1.2217304763960306" xyz="0 0 0"/>
++  </joint>
++  <link name="r_force_torque_link">
++    <visual>
++      <origin rpy="0 0 0" xyz="0 0 -0.0120"/>
++      <geometry>
++       <cylinder length="0.0356" radius="0.0225"/>
++      </geometry>
++      <material name="Grey"/>
++    </visual>
++  </link>
+   <joint name="r_gripper_palm_joint" type="fixed">
+-    <origin rpy="0 0 0" xyz="0 0 0"/>
+-    <parent link="r_wrist_roll_link"/>
++    <origin rpy="0 1.5707963267948966 -1.2217304763960306" xyz="0 0 0"/>
++    <parent link="r_force_torque_link"/>
+     <child link="r_gripper_palm_link"/>
+   </joint>
+   <link name="r_gripper_palm_link">
+     <inertial>

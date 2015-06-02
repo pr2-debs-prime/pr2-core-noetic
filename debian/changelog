@@ -1,0 +1,61 @@
+pr2-core-hydro (0.1.7-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1185
+   - r1185: Add dependency on new pr2-ft.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Thu, 25 Jul 2013 17:25:28 -0700
+
+pr2-core-hydro (0.1.6-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1181
+   - r1181: Add F/T patches for pr2-ft.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Thu, 25 Jul 2013 15:58:07 -0700
+
+pr2-core-hydro (0.1.5-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1179
+   - r1179: Add empty F/T launch files and hooks.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Thu, 25 Jul 2013 10:43:49 -0700
+
+pr2-core-hydro (0.1.4-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1177
+   - r1177: Remove webui from PR2 bringup.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Mon, 15 Jul 2013 15:21:04 -0700
+
+pr2-core-hydro (0.1.3-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1175
+   - r1172: Create pr2-core-hydro.
+   - r1173: Update debian files for Hydro.
+   - r1174: Rename directory to hydro.
+   - r1175: Update files to Hydro.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Mon, 15 Jul 2013 11:56:15 -0700
+
+pr2-core-groovy (0.1.2-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1071
+   - r1071: Move distro symlink creation to distro packages.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Fri, 11 Jan 2013 13:02:39 -0800
+
+pr2-core-groovy (0.1.1-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1065
+   - r1065: Add dependency on openni-launch.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Wed, 19 Dec 2012 15:01:39 -0800
+
+pr2-core-groovy (0.1.0-precise) stable; urgency=low
+
+  * Incrementing to SVN: r1054
+   - r1052: Create pr2-core-groovy
+   - r1053: Setup files for groovy.
+   - r1054: Update control files for groovy.
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Thu, 06 Dec 2012 16:03:44 -0800
+
