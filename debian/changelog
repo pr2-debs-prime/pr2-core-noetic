@@ -1,7 +1,16 @@
+pr2-core-indigo (0.1.8-trusty) stable; urgency=low
+
+  [ TheDash ]
+
+ -- Devon Ash <dash@clearpathrobotics.com>  Thu, 25 Jul 2013 17:25:28 -0700
+
 pr2-core-hydro (0.1.7-precise) stable; urgency=low
 
+  [ Austin Hendrix ]
   * Incrementing to SVN: r1185
    - r1185: Add dependency on new pr2-ft.
+
+  [ TheDash ]
 
  -- Austin Hendrix <ahendrix@willowgarage.com>  Thu, 25 Jul 2013 17:25:28 -0700
 
