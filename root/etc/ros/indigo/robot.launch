@@ -8,7 +8,7 @@
     
     <!-- Robot bringup -->
     <include file="$(find pr2_bringup)/pr2.launch">
-        <arg name="c2" value="$(c2)"/>
+        <arg name="c2" value="$(arg c2)"/>
     </include>
     
     <include file="/etc/ros/indigo/ft.launch" />
