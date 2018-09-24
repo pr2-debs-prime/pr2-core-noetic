@@ -1,3 +1,15 @@
+pr2-core-kinetic (0.1.10-xenial) trusty; urgency=medium
+
+  * updated indigo-> kinetic
+
+ -- David Feil-Seifer <dfseifer@azrael>  Mon, 24 Sep 2018 16:00:52 -0700
+
+pr2-core-kinetic (0.1.10-xenial) xenial; urgency=medium
+
+  * updated indigo-> kinetic
+
+ -- David Feil-Seifer <dfseifer@azrael>  Mon, 24 Sep 2018 16:00:23 -0700
+
 pr2-core-kinetic (0.1.9-xenial) trusty; urgency=medium
 
   [ TheDash ]
