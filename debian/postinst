@@ -4,13 +4,13 @@
 
 update_urdf()
 {
-    if [ -e /etc/ros/indigo/setup.bash ]; then
+    if [ -e /etc/ros/kinetic/setup.bash ]; then
 	
-	. /etc/ros/indigo/setup.sh
+	. /etc/ros/kinetic/setup.sh
 	
 	ver_str=`rosversion pr2_description`
 	
-	new_xacro=/etc/ros/indigo/urdf/pr2_${ver_str}.urdf.xacro
+	new_xacro=/etc/ros/kinetic/urdf/pr2_${ver_str}.urdf.xacro
 	    
         #Copy pr2.urdf.xacro to /etc/ros/urdf/
 	[ -e ${new_xacro} ] ||
@@ -18,8 +18,8 @@ update_urdf()
 	    cp `rospack find pr2_description`/robots/pr2.urdf.xacro ${new_xacro}
 	
             #Generate a nominal pr2.xml
-	    tgt_urdf=/etc/ros/indigo/urdf/robot.xml
-	    new_urdf=/etc/ros/indigo/urdf/robot_uncalibrated_${ver_str}.xml
+	    tgt_urdf=/etc/ros/kinetic/urdf/robot.xml
+	    new_urdf=/etc/ros/kinetic/urdf/robot_uncalibrated_${ver_str}.xml
 	    rosrun xacro xacro.py ${new_xacro} > ${new_urdf}
 	    
             # Create link from robot.xml
@@ -28,7 +28,7 @@ update_urdf()
 	    fi
 	
             # Also create link from robot_uncalibrated.xml 
-	    tgt_urdf=/etc/ros/indigo/urdf/robot_uncalibrated.xml
+	    tgt_urdf=/etc/ros/kinetic/urdf/robot_uncalibrated.xml
 	    if [ ! -e ${tgt_urdf} ]; then
 		ln -sf ${new_urdf} ${tgt_urdf}
 	    fi
@@ -40,7 +40,7 @@ update_urdf()
 case "$1" in
     'configure')
 
-   [ -e /etc/ros/distro -o -h /etc/ros/distro ] || ln -sf /etc/ros/indigo /etc/ros/distro
+   [ -e /etc/ros/distro -o -h /etc/ros/distro ] || ln -sf /etc/ros/kinetic /etc/ros/distro
 	
 	update_urdf
     
