@@ -1,13 +1,13 @@
-Source: pr2-core-indigo
+Source: pr2-core-kinetic
 Section: pr2/config
 Priority: extra
-Maintainer: Devon Ash <dash@clearpathrobotics.com>
+Maintainer: David Feil-Seifer <dave@cse.unr.edu>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.7.2
 
 Package: pr2-core-indigo
 Architecture: any
-Depends: python, ros-indigo-pr2-robot, ros-indigo-ros-core, ros-indigo-openni-launch, pr2-core (>= 0.5.31), pr2-ft
+Depends: python, ros-kinetic-pr2-robot, ros-kinetic-ros-core, ros-kinetic-openni-launch, pr2-core (>= 0.5.31), pr2-ft
 Description: Provides ROS environment configuration files for PR2.
 Provides: ${diverted-files}, pr2-core-impl
 Conflicts: ${diverted-files}

@@ -1,3 +1,3 @@
 #!/bin/zsh
 CATKIN_SHELL=zsh
-. /etc/ros/indigo/setup.sh
+. /etc/ros/kinetic/setup.sh
