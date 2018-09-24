@@ -1,3 +1,15 @@
+pr2-core-kinetic (0.1.9-xenial) trusty; urgency=medium
+
+  [ TheDash ]
+  * Added dependency to ros-kinetic-ros-core
+  * Added param to enable/disable c2
+  * Fixed arg syntax
+
+  [ David Feil-Seifer ]
+  * moved impl from indigo to kinetic
+
+ -- David Feil-Seifer <dave@cse.unr.edu>  Mon, 24 Sep 2018 15:55:16 -0700
+
 pr2-core-indigo (0.1.8-trusty) stable; urgency=low
 
   [ TheDash ]
