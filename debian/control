@@ -5,7 +5,7 @@ Maintainer: David Feil-Seifer <dave@cse.unr.edu>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.7.2
 
-Package: pr2-core-indigo
+Package: pr2-core-kinetic
 Architecture: any
 Depends: python, ros-kinetic-pr2-robot, ros-kinetic-ros-core, ros-kinetic-openni-launch, pr2-core (>= 0.5.31), pr2-ft
 Description: Provides ROS environment configuration files for PR2.

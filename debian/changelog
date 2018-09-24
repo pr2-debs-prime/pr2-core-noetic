@@ -8,7 +8,7 @@ pr2-core-kinetic (0.1.9-xenial) trusty; urgency=medium
   [ David Feil-Seifer ]
   * moved impl from indigo to kinetic
 
- -- David Feil-Seifer <dave@cse.unr.edu>  Mon, 24 Sep 2018 15:55:16 -0700
+ -- David Feil-Seifer <dfseifer@azrael>  Mon, 24 Sep 2018 15:57:49 -0700
 
 pr2-core-indigo (0.1.8-trusty) stable; urgency=low
 
