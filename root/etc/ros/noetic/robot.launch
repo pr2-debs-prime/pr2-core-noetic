@@ -1,6 +1,6 @@
 <launch>
 
-    <!-- Robot Description --> <param name="robot_description" textfile="/etc/ros/kinetic/urdf/robot.xml" />
+    <!-- Robot Description --> <param name="robot_description" textfile="/etc/ros/noetic/urdf/robot.xml" />
 
     <!-- Robot Analyzer --> <rosparam command="load" file="$(find pr2_bringup)/config/pr2_analyzers.yaml" ns="diag_agg" />
 
@@ -11,7 +11,7 @@
         <arg name="c2" value="$(arg c2)"/>
     </include>
     
-    <include file="/etc/ros/kinetic/ft.launch" />
+    <include file="/etc/ros/noetic/ft.launch" />
 
     <rosparam file="/etc/ros/robot.yaml"/>
 
